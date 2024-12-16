@@ -7,3 +7,6 @@ class ConnectionFailed(BaseException):
 
 class SqliteNotInstalled(BaseException):
     """Raise when sqlite3 is not installed on the remote server"""
+
+class FileNotDatabase(BaseException):
+    """Raise when the remote file is not a sqlite3 database"""
